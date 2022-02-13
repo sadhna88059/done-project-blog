@@ -19,6 +19,10 @@ app.get('/', async (req, res) => {
   //
   res.render('articles/home')
 })
+app.get('/about', async (req, res) => {
+  //
+  res.render('articles/about')
+})
 
 app.use('/articles', articleRouter)
 
